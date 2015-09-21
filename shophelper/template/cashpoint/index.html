@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="{% static 'angular.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'my.js' %}"></script>
+</head>
+<body >
+
+
+<div class="container" ng-app="myapp" ng-controller="myCtrl">
+
+<ul ng-repeat="data in Product" >
+	
+		<li>{{data.name}}----{{data.price}}</li><br>
+		
+</ul>
+
+
+</div>
+
+</body>
+</html>
